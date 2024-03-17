@@ -1,0 +1,9 @@
+npp_save
+cmd /k "cd $(CURRENT_DIRECTORY)\.." & all.bat $(NAME_PART) & exit
+
+npp_save
+cmd /c "cd $(CURRENT_DIRECTORY)\.." & all.bat $(NAME_PART)
+npp_save
+cmd /c "cd $(CURRENT_DIRECTORY)\.." & asm.bat $(NAME_PART)
+npp_save
+cmd /c "cd $(CURRENT_DIRECTORY)\.." & dis.bat $(NAME_PART)

@@ -1,0 +1,34 @@
+ *   6) All Notepad++ environment variables are supported:
+ *        $(FULL_CURRENT_PATH)  : E:\my Web\main\welcome.html 
+ *        $(CURRENT_DIRECTORY)  : E:\my Web\main
+ *        $(FILE_NAME)          : welcome.html 
+ *        $(NAME_PART)          : welcome 
+ *        $(EXT_PART)           : .html
+ *        $(NPP_DIRECTORY)      : the full path of notepad++'s directory
+ *        $(CURRENT_WORD)       : word(s) you selected in Notepad++
+ *        $(CURRENT_LINE)       : current line number
+ *        $(CURRENT_COLUMN)     : current column number
+ *   7) Additional environment variables:
+ *        $(#0)                 : C:\Program Files\Notepad++\notepad++.exe
+ *        $(#N), N=1,2,3...     : full path of the Nth opened document
+ *        $(LEFT_VIEW_FILE)     : current file path-name in primary (left) view
+ *        $(RIGHT_VIEW_FILE)    : current file path-name in second (right) view
+ *        $(PLUGINS_CONFIG_DIR) : full path of the plugins configuration directory
+ *        $(CWD)                : current working directory of NppExec (use "cd" to change it)
+ *        $(ARGC)               : number of arguments passed to the NPP_EXEC command
+ *        $(ARGV)               : all arguments passed to the NPP_EXEC command after the script name
+ *        $(ARGV[0])            : script name - first parameter of the NPP_EXEC command
+ *        $(ARGV[N])            : Nth argument (N=1,2,3...)
+ *        $(RARGV)              : all arguments in reverse order (except the script name)
+ *        $(RARGV[N])           : Nth argument in reverse order (N=1,2,3...)
+ *        $(INPUT)              : this value is set by the 'inputbox' command
+ *        $(INPUT[N])           : Nth field of the $(INPUT) value (N=1,2,3...)
+ *        $(OUTPUT)             : this value can be set by the child process, see npe_console v+
+ *        $(OUTPUT1)            : first line in $(OUTPUT)
+ *        $(OUTPUTL)            : last line in $(OUTPUT)
+ *        $(EXITCODE)           : exit code of the last executed child process
+ *        $(MSG_RESULT)         : result of 'npp_sendmsg[ex]' or 'sci_sendmsg'
+ *        $(MSG_WPARAM)         : wParam (output) of 'npp_sendmsg[ex]' or 'sci_sendmsg'
+ *        $(MSG_LPARAM)         : lParam (output) of 'npp_sendmsg[ex]' or 'sci_sendmsg'
+ *        $(SYS.<var>)          : system's environment variable, e.g. $(SYS.PATH)
+ 

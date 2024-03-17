@@ -1,0 +1,9 @@
+themes installable only under admin
+  C:\Users\hbu-er\AppData\Roaming\Notepad++
+copy them to user dir
+  C:\Users\hbu\AppData\Roaming\Notepad++
+; --------------------------------------------------------------------------------------------------------------------- ;
+Run the Notepad++ installer as admin
+Next…
+Make sure Don’t use %APPDATA% is enabled - This will enable themes for all users
+; --------------------------------------------------------------------------------------------------------------------- ;

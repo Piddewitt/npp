@@ -1,0 +1,64 @@
+; Install some plugins to Notepad
+; --------------------------------------------------------------------------------------------------------------------- ;
+  Plugins -> Plugins Admin
+  Select Check Boxes next to Customize Toolbar, ExtSettings, and NPPExec
+  Click Install
+  Click Yes to restart Notepad++ and Yes to accept changes to machine.
+; --------------------------------------------------------------------------------------------------------------------- ;
+; Add the ability to execute batch files via NppExec
+; --------------------------------------------------------------------------------------------------------------------- ;
+  Plugins -> NppExec -> Execute NppExec script…
+  Copy the following text into the box:
+
+    npp_save
+    cmd /c "cd $(CURRENT_DIRECTORY)\.." & all.bat $(NAME_PART)
+
+  Click Save…
+  Enter C64_All in the prompt
+  Click Save
+  Close the Execute… box
+  
+  Plugins -> NppExec -> Advanced Options…
+  In the bottom left, under “Menu Item”, enter "All"
+  In the “Associated Script” dropdown, select “C64_All” script
+  Click Add/Modify
+	
+	Repeat the steps above for "Asm" and "Dis"
+	
+  
+  In the top left corner check the box next to “Place to the Macros submenu”
+  Click OK, OK
+  Restart Notepad++
+    This lets the new options you added in get selected as a menu item
+; --------------------------------------------------------------------------------------------------------------------- ;
+; Create Buttons to turn the lines on and off
+; --------------------------------------------------------------------------------------------------------------------- ;
+  Plugins -> Customize Toolbar -> Custom Buttons
+  Restart Notepad++
+    This enables the new buttons as hammer icons in the far right of the toolbar
+  Open the file “C:\Users\your_uid\AppData\Roaming\Notepad++\plugins\config\CustomizeToolbar.btn”
+  Delete all the contents and replace it with the following 3 lines:
+
+  Macro,All,,,All.bmp
+  Macro,Asm,,,Asm.bmp
+  Macro,Dis,,,Dis.bmp
+  
+    Care for Upper/Lower case in macro name! Must be same as entered above
+
+  Save the file
+  copy the following files to “C:\Users\your_uid\AppData\Roaming\Notepad++\plugins\config\”
+  
+    All.bmp
+    Asm.bmp
+    Dis.bmp
+  
+  Activate menu item Plugins --> NppExec --> Follow $(CURRENT_DIRECTORY)
+  Restart Notepad++ (Last time)
+  The new buttons should show up as icons on the far right
+; --------------------------------------------------------------------------------------------------------------------- ;
+; Select toolbar position
+; --------------------------------------------------------------------------------------------------------------------- ;
+	Select Plugins -> Customize Toolbar -> Customize ...
+	Remove the new buttons from the right side to the left side
+	Move the new buttons to their appropriate place on the right side again
+; --------------------------------------------------------------------------------------------------------------------- ;

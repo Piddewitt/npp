@@ -1,0 +1,168 @@
+; --------------------------------------------------------------------------------------------------------------------- ;
+; my npp modifications
+; --------------------------------------------------------------------------------------------------------------------- ;
+setting --> preferences
+	general
+    Standard icons: small
+		Double click to close document
+  dark mode
+    Light mode
+	default directory
+		remember last used directory
+	language
+		tabsize: 2
+		replace by space
+  backup
+    snapshot every 60secs
+    simple backup
+    custom backup directory (C:\Users\Honz\Documents\Tools\npp\backup)
+  Auto-Completion
+    Unhook Enable ...
+  MISC.
+    file status auto-detection
+      update silently
+; --------------------------------------------------------------------------------------------------------------------- ;
+settings --> shortcut mapper
+   9      -         set to F12          - Save As                         (conflict with 172 Post-It)
+  26      -         set to ALT+B        - Begin/End select
+  74-75   - clear
+  82      -         set to CTRL+/       - Trim trailing space             (conflict - don't care)
+  93      - clear
+  105     -         set to ALT+F        - Find in files ...
+  140-145 - clear                       - Previous style of ...
+  172     - clear                       - Post-it
+  198     -         set to ALT+DOWN     - Move Tab Forward
+  199     -         set to ALT+UP       - Move Tab Backward
+  200     -         set to ALT+RIGHT    - Switch to previous document
+  201     -         set to ALT+LEFT     - Switch to next document
+; --------------------------------------------------------------------------------------------------------------------- ;
+enable ctrl+shft+0
+  windows einstellungen
+    tastatur
+    erweiterte einstellungen
+    sprachleistenoptionen
+    erweiterte tastatureinstellungen
+    umschalttaste drücken aktivieren
+    tastenkombination ändern
+    beidemale nicht zugewiesen aktivieren
+    ok
+    übernehmen
+    ok
+  Win 11
+    Time & Language > Typing > Advanced keyboard settings
+    Input language hot keys
+    Change key sequence
+    Switch input language   --> none
+    Switch keyboard layout  --> none
+    Ok
+    Apply
+    Ok
+; --------------------------------------------------------------------------------------------------------------------- ;
+language
+  copy language files to C:\Users\Honz\Documents\Tools\npp\language
+  language --> user defined language --> define your language
+  import
+  select language file
+; --------------------------------------------------------------------------------------------------------------------- ;
+macros
+  C:\Users\Honz\AppData\Roaming\Notepad++\shortcuts.xml
+  insert:
+
+    <Macros>
+        <Macro name="Bin_0" Ctrl="yes" Alt="no" Shift="yes" Key="48">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+        </Macro>
+        <Macro name="Bin_1" Ctrl="yes" Alt="no" Shift="yes" Key="49">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+        </Macro>
+        <Macro name="Bin_2" Ctrl="yes" Alt="no" Shift="yes" Key="50">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+        </Macro>
+        <Macro name="Bin_3" Ctrl="yes" Alt="no" Shift="yes" Key="51">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+        </Macro>
+        <Macro name="Bin_4" Ctrl="yes" Alt="no" Shift="yes" Key="52">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+        </Macro>
+        <Macro name="Bin_5" Ctrl="yes" Alt="no" Shift="yes" Key="53">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+        </Macro>
+        <Macro name="Bin_6" Ctrl="yes" Alt="no" Shift="yes" Key="54">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+        </Macro>
+        <Macro name="Bin_7" Ctrl="yes" Alt="no" Shift="yes" Key="55">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+        </Macro>
+        <Macro name="Bin_8" Ctrl="yes" Alt="no" Shift="yes" Key="56">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+        </Macro>
+        <Macro name="Bin_9" Ctrl="yes" Alt="no" Shift="yes" Key="57">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+        </Macro>
+        <Macro name="Bin_A" Ctrl="yes" Alt="no" Shift="yes" Key="65">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+        </Macro>
+        <Macro name="Bin_B" Ctrl="yes" Alt="no" Shift="yes" Key="66">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+        </Macro>
+        <Macro name="Bin_C" Ctrl="yes" Alt="no" Shift="yes" Key="67">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+        </Macro>
+        <Macro name="Bin_D" Ctrl="yes" Alt="no" Shift="yes" Key="68">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+        </Macro>
+        <Macro name="Bin_E" Ctrl="yes" Alt="no" Shift="yes" Key="69">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="." />
+        </Macro>
+        <Macro name="Bin_F" Ctrl="yes" Alt="no" Shift="yes" Key="70">
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+            <Action type="1" message="2170" wParam="0" lParam="0" sParam="#" />
+        </Macro>
+; --------------------------------------------------------------------------------------------------------------------- ;
