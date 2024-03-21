@@ -37,17 +37,6 @@ settings --> shortcut mapper
   201     -         set to ALT+LEFT     - Switch to next document
 ; --------------------------------------------------------------------------------------------------------------------- ;
 enable ctrl+shft+0
-  windows einstellungen
-    tastatur
-    erweiterte einstellungen
-    sprachleistenoptionen
-    erweiterte tastatureinstellungen
-    umschalttaste drücken aktivieren
-    tastenkombination ändern
-    beidemale nicht zugewiesen aktivieren
-    ok
-    übernehmen
-    ok
   Win 11
     Time & Language > Typing > Advanced keyboard settings
     Input language hot keys
