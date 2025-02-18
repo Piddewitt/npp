@@ -2,40 +2,44 @@
 ; my npp modifications
 ; --------------------------------------------------------------------------------------------------------------------- ;
 setting --> preferences
-	general
+	General
     Standard icons: small
 		Double click to close document
-  dark mode
+	Editing 2
+    Multi-Editing
+      Unhook 'Enable Column Selection to Multi-Editing'
+  Dark Mode
     Light mode
-	default directory
+	Default Directory
 		remember last used directory
-	language
+	Language
 		tabsize: 2
 		replace by space
-  backup
+  Backup
     snapshot every 60secs
     simple backup
-    custom backup directory (C:\Users\Honz\Documents\Tools\npp\backup)
+    custom backup directory (C:\Users\your_user\Documents\Tools\npp\backup)
   Auto-Completion
     Unhook Enable ...
   MISC.
     file status auto-detection
       update silently
-; --------------------------------------------------------------------------------------------------------------------- ;
+------------------------------------------------------------------------
 settings --> shortcut mapper
    9      -         set to F12          - Save As                         (conflict with 172 Post-It)
-  26      -         set to ALT+B        - Begin/End select
-  74-75   - clear
-  82      -         set to CTRL+/       - Trim trailing space             (conflict - don't care)
+  32      -         set to ALT+B        - Begin/End select
+  80      - clear                       - Function Parameters Previous Hint
+  81      - clear                       - Function Parameters next Hint
+  88      -         set to CTRL+/       - Trim trailing space             (conflict egal)
   93      - clear
-  105     -         set to ALT+F        - Find in files ...
-  140-145 - clear                       - Previous style of ...
-  172     - clear                       - Post-it
-  198     -         set to ALT+DOWN     - Move Tab Forward
-  199     -         set to ALT+UP       - Move Tab Backward
-  200     -         set to ALT+RIGHT    - Switch to previous document
-  201     -         set to ALT+LEFT     - Switch to next document
-; --------------------------------------------------------------------------------------------------------------------- ;
+  121     -         set to ALT+F        - Find in files ...
+  156-161 - clear                       - Previous style of ...
+  188     - clear                       - Post-it
+  218     -         set to ALT+DOWN     - Next Tab
+  219     -         set to ALT+UP       - Previous Tab
+  220     -         set to ALT+RIGHT    - Move Tab Forward
+  221     -         set to ALT+LEFT     - Move Tab Backward
+------------------------------------------------------------------------
 enable ctrl+shft+0
   Win 11
     Time & Language > Typing > Advanced keyboard settings
