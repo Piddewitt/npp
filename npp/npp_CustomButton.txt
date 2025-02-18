@@ -1,64 +1,62 @@
-; Install some plugins to Notepad
-; --------------------------------------------------------------------------------------------------------------------- ;
-  Plugins -> Plugins Admin
-  Select Check Boxes next to Customize Toolbar, ExtSettings, and NPPExec
-  Click Install
-  Click Yes to restart Notepad++ and Yes to accept changes to machine.
-; --------------------------------------------------------------------------------------------------------------------- ;
-; Add the ability to execute batch files via NppExec
-; --------------------------------------------------------------------------------------------------------------------- ;
-  Plugins -> NppExec -> Execute NppExec script…
-  Copy the following text into the box:
+Call the three batch files (asm.bat/dis.bat/all.bat) from the Notepad++ Toolbar
+to allow a direct Asm/DisAsm of the active edit source by a simple mouse click
+----------------------------------------------------------------------------------
+Install required plugins
+----------------------------------------------------------------------------------    
+  1 - Open Plugins -> Plugins Admin...
+    1.1 - Check Customize Toolbar / ExtSettings / NPPExec
+    1.2 - Click Install
+    1.3 - Click Yes to restart Notepad++
+----------------------------------------------------------------------------------    
+Add the ability to execute batch files via NppExec
+----------------------------------------------------------------------------------    
+  1 - Open Plugins -> NppExec -> Execute NPP Script…
+      1.1 - Copy the following two text lines into the 'Command(s):' textbox
+              npp_save
+              cmd /c 'cd $(CURRENT_DIRECTORY)\..' & all.bat $(NAME_PART)
+      1.2 - Click Save…
+              Name it 'C64_All' in the 'Script name:' box
+  
+            Repeat the steps 1.1 and 1.2 for the scripts 'asm.bat (C64_Asm)' and 'dis.bat (C64_Dis)'
+      1.3 Close Execute NPP Script…
+  --------------------------------------------------------------------------------    
+  2 - Open Plugins -> NppExec -> Advanced Options…
+      2.1  In the 'Menu Item' area 
+             2.1.1 - Enter 'All' as 'Item name:'
+             2.1.2 - Select the 'C64_All' script in the 'Associated Script' dropdown box
+             2.1.3 - Click Add/Modify
+        
+           Repeat steps 2.1.1 through 2.1.3 for 'Asm' and 'Dis'
+      2.2 - Check 'Place to the Macros submenu' in the top left corner
+      2.3 - Click 'OK' twice
+      2.4 - Restart Notepad++ to allow the new options to be selected as a menu item
+----------------------------------------------------------------------------------    
+Activate the Custom Buttons
+----------------------------------------------------------------------------------    
+  1 - Check Plugins -> Customize Toolbar -> Custom Buttons
+  2 - Restart Notepad++ to show the new buttons as hammer icons in the toolbar
+----------------------------------------------------------------------------------    
+Define the new Cutom Button Icons
+----------------------------------------------------------------------------------    
+  1 - Open the file 'C:\Users\your_uid\AppData\Roaming\Notepad++\plugins\config\CustomizeToolbar.btn'
+    1.1 - Delete all the contents
+    1.2 - Insert the following three lines
+            Macro,All,,,All.bmp
+            Macro,Asm,,,Asm.bmp
+            Macro,Dis,,,Dis.bmp
+          Care for Upper/Lower case in macro name! Must be same as entered above
+    1.3 - Save the file
+    1.4 - Copy the following files to 'C:\Users\your_uid\AppData\Roaming\Notepad++\plugins\config\'
+            All.bmp
+            Asm.bmp
+            Dis.bmp
+    1.5 - Check the menu item: Plugins --> NppExec --> Follow $(CURRENT_DIRECTORY)
+    1.6 - Restart Notepad++ to show the new buttons as icons in the Toolbar
+----------------------------------------------------------------------------------    
+Select new Cutom Button Icons toolbar position
+----------------------------------------------------------------------------------    
+	1 - Select Plugins -> Customize Toolbar -> Customize ...
+      1.1 - Remove the new buttons from the right side to the left side
+      1.2 - Move the new buttons to their appropriate place on the right side again
+----------------------------------------------------------------------------------    
 
-    npp_save
-    cmd /c "cd $(CURRENT_DIRECTORY)\.." & all.bat $(NAME_PART)
-
-  Click Save…
-  Enter C64_All in the prompt
-  Click Save
-  Close the Execute… box
-  
-  Plugins -> NppExec -> Advanced Options…
-  In the bottom left, under “Menu Item”, enter "All"
-  In the “Associated Script” dropdown, select “C64_All” script
-  Click Add/Modify
-	
-	Repeat the steps above for "Asm" and "Dis"
-	
-  
-  In the top left corner check the box next to “Place to the Macros submenu”
-  Click OK, OK
-  Restart Notepad++
-    This lets the new options you added in get selected as a menu item
-; --------------------------------------------------------------------------------------------------------------------- ;
-; Create Buttons to turn the lines on and off
-; --------------------------------------------------------------------------------------------------------------------- ;
-  Plugins -> Customize Toolbar -> Custom Buttons
-  Restart Notepad++
-    This enables the new buttons as hammer icons in the far right of the toolbar
-  Open the file “C:\Users\your_uid\AppData\Roaming\Notepad++\plugins\config\CustomizeToolbar.btn”
-  Delete all the contents and replace it with the following 3 lines:
-
-  Macro,All,,,All.bmp
-  Macro,Asm,,,Asm.bmp
-  Macro,Dis,,,Dis.bmp
-  
-    Care for Upper/Lower case in macro name! Must be same as entered above
-
-  Save the file
-  copy the following files to “C:\Users\your_uid\AppData\Roaming\Notepad++\plugins\config\”
-  
-    All.bmp
-    Asm.bmp
-    Dis.bmp
-  
-  Activate menu item Plugins --> NppExec --> Follow $(CURRENT_DIRECTORY)
-  Restart Notepad++ (Last time)
-  The new buttons should show up as icons on the far right
-; --------------------------------------------------------------------------------------------------------------------- ;
-; Select toolbar position
-; --------------------------------------------------------------------------------------------------------------------- ;
-	Select Plugins -> Customize Toolbar -> Customize ...
-	Remove the new buttons from the right side to the left side
-	Move the new buttons to their appropriate place on the right side again
-; --------------------------------------------------------------------------------------------------------------------- ;
